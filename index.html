@@ -1,167 +1,100 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Professional website template">
-    <title>Professional Website</title>
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Charles-Alexandre Bouchard</title>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <header>
+            <img src="profilepicture.jpg" alt="Profile Picture" class="profile-image">
+            <h1>Charles-Alexandre Bouchard</h1>
+            <p> <a href="mailto:Charles_AB@outlook.com">Charles_AB@outlook.com</a> | <a href="https://www.linkedin.com/in/charles-alexandre-bouchard-4298b126b/" target="_blank">LinkedIn</a></p>
+        </header>
 
-        body {
-            font-family: Arial, sans-serif;
-            line-height: 1.6;
-        }
+        <nav>
+            <ul>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#education">Education</a></li>
+                <li><a href="#interests">Interests</a></li>
+                <li><a href="#soft-skills">Soft Skills</a></li>
+            </ul>
+        </nav>
 
-        header {
-            background: #333;
-            color: #fff;
-            padding: 1rem 0;
-            text-align: center;
-        }
+        <main>
+            <section id="skills">
+                <h2>Skills</h2>
+                <ul>
+                    <li>Knowledgeable of Java, Kotlin, Python, and C# programming languages</li>
+                    <li>Educated in Linux (Scripting/Security), Proficient in Windows and macOS</li>
+                    <li>Good at multitasking and working in a fast-paced environment</li>
+                    <li>Proficient at IT Support, Git</li>
+                    <li>Educated in Oracle PL/SQL Database</li>
+                    <li>Educated in Web Development (HTML, CSS, JavaScript, React, Flask, Express)</li>
+                    <li>Proficient in Word, Excel, and PowerPoint</li>
+                    <li>Experience working in a team environment</li>
+                    <li>Bilingual</li>
+                </ul>
+            </section>
 
-        header h1 {
-            margin-bottom: 0.5rem;
-        }
+            <section id="projects">
+                <h2>Projects</h2>
+                <article>
+                    <h3>Geospatial Data API</h3>
+                    <p>API used to gather geospatial data to generate a report to the FED, using Python: Pandas/GeoPandas and Flask Frameworks.</p>
+                </article>
+                <article>
+                    <h3>Weather Station API</h3>
+                    <p>API used to gather weather data from stations around the world, using Python: Pandas/GeoPandas, Flask, and Dask Frameworks.</p>
+                </article>
+            </section>
 
-        nav {
-            background: #444;
-            padding: 0.5rem;
-        }
+            <section id="experience">
+                <h2>Experience</h2>
+                <article>
+                    <h3>Morgan Stanley, Technology Analyst (Internship)</h3>
+                    <p>May 2024 – September 2024</p>
+                    <p>Worked alongside data scientists to create APIs and gathered data used to predict market trends.</p>
+                </article>
+                <article>
+                    <h3>Teleperformance, iOS Technical Support</h3>
+                    <p>January 2024 – April 2024</p>
+                    <p>Provided technical support, troubleshooting, and resolving customer issues efficiently via phone support.</p>
+                </article>
+            </section>
 
-        nav ul {
-            list-style: none;
-            display: flex;
-            justify-content: center;
-        }
+            <section id="education">
+                <h2>Education</h2>
+                <p><strong>Computer Science and Technology</strong>, Dawson College (Fall 2021 – Winter 2025)</p>
+                <p>Favorite courses: C#, Python, Linux</p>
+            </section>
 
-        nav ul li {
-            margin: 0 1rem;
-        }
+            <section id="interests">
+                <h2>Interests</h2>
+                <ul>
+                    <li>Video Games</li>
+                    <li>Roleplaying tabletop games</li>
+                    <li>Content Creation</li>
+                </ul>
+            </section>
 
-        nav ul li a {
-            color: #fff;
-            text-decoration: none;
-        }
+            <section id="soft-skills">
+                <h2>Soft Skills</h2>
+                <ul>
+                    <li>Leadership</li>
+                    <li>Conflict Resolution</li>
+                    <li>Communication</li>
+                </ul>
+            </section>
+        </main>
 
-        nav ul li a:hover {
-            text-decoration: underline;
-        }
+        <footer>
+            <p>&copy; 2025 Charles-Alexandre Bouchard</p>
+        </footer>
 
-        section {
-            padding: 2rem;
-            max-width: 1100px;
-            margin: 0 auto;
-        }
-
-        .hero {
-            background: url('hero-image.jpg') no-repeat center center/cover;
-            color: #fff;
-            padding: 4rem 2rem;
-            text-align: center;
-        }
-
-        .hero h2 {
-            margin-bottom: 1rem;
-        }
-
-        .container {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 1rem;
-        }
-
-        .card {
-            background: #f4f4f4;
-            border: 1px solid #ddd;
-            border-radius: 5px;
-            padding: 1rem;
-            flex: 1 1 calc(33.333% - 2rem);
-            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-            text-align: center;
-        }
-
-        .card img {
-            max-width: 100%;
-            height: auto;
-            margin-bottom: 1rem;
-        }
-
-        footer {
-            background: #333;
-            color: #fff;
-            text-align: center;
-            padding: 1rem 0;
-            margin-top: 2rem;
-        }
-
-        footer p {
-            margin: 0;
-        }
-    </style>
-</head>
-<body>
-    <header>
-        <h1>Your Company Name</h1>
-        <p>Your tagline or mission statement</p>
-    </header>
-
-    <nav>
-        <ul>
-            <li><a href="#about">About</a></li>
-            <li><a href="#services">Services</a></li>
-            <li><a href="#portfolio">Portfolio</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
-    </nav>
-
-    <section class="hero">
-        <h2>Welcome to Our Professional Website</h2>
-        <p>Delivering quality and excellence every step of the way.</p>
-    </section>
-
-    <section id="about">
-        <h2>About Us</h2>
-        <p>We are a professional team dedicated to providing top-notch services to our clients. Our mission is to help you achieve your goals with innovative solutions and unmatched expertise.</p>
-    </section>
-
-    <section id="services">
-        <h2>Our Services</h2>
-        <div class="container">
-            <div class="card">
-                <img src="service1.jpg" alt="Service 1">
-                <h3>Service 1</h3>
-                <p>Description of Service 1.</p>
-            </div>
-            <div class="card">
-                <img src="service2.jpg" alt="Service 2">
-                <h3>Service 2</h3>
-                <p>Description of Service 2.</p>
-            </div>
-            <div class="card">
-                <img src="service3.jpg" alt="Service 3">
-                <h3>Service 3</h3>
-                <p>Description of Service 3.</p>
-            </div>
-        </div>
-    </section>
-
-    <section id="portfolio">
-        <h2>Portfolio</h2>
-        <p>Check out some of our recent projects and accomplishments.</p>
-    </section>
-
-    <section id="contact">
-        <h2>Contact Us</h2>
-        <p>Have questions or need assistance? Reach out to us anytime.</p>
-    </section>
-
-    <footer>
-        <p>&copy; 2025 Your Company Name. All rights reserved.</p>
-    </footer>
-</body>
+        <script src="script.js"></script>
+    </body>
 </html>
