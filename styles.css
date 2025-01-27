@@ -102,7 +102,14 @@ footer {
   width: 100%;
 }
 
-/* Responsive Design */
+.description {
+  max-width: 25%;
+}
+
+.description_div {
+  text-align: center;
+}
+
 @media (max-width: 768px) {
   nav ul {
       flex-direction: column;
@@ -111,4 +118,9 @@ footer {
   nav ul li {
       margin: 0.5rem 0;
   }
+}
+
+.description {
+  max-width: 600px; /* Set your desired width limit */
+  margin: 0 auto; /* Center the paragraph */
 }
