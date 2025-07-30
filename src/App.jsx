@@ -95,7 +95,7 @@ function App() {
         <div className="container mx-auto text-center">
           <div className="w-32 h-32 mx-auto mb-8">
             <img
-              src="../profilepicture.jpg"
+              src="src/profilepicture.jpg"
               alt="Profile picture of Charles-Alexandre Bouchard"
               className="w-32 h-32 rounded-full object-cover border-4 border-blue-500 shadow-lg mx-auto"
             />
