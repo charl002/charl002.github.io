@@ -93,8 +93,12 @@ function App() {
       {/* Hero Section */}
       <section className="py-20 px-4">
         <div className="container mx-auto text-center">
-          <div className="w-32 h-32 mx-auto mb-8 rounded-full bg-gradient-to-r from-blue-500 to-indigo-600 flex items-center justify-center text-white text-4xl font-bold">
-            CAB
+          <div className="w-32 h-32 mx-auto mb-8">
+            <img
+              src="/profilepicture.jpg"
+              alt="Profile picture of Charles-Alexandre Bouchard"
+              className="w-32 h-32 rounded-full object-cover border-4 border-blue-500 shadow-lg mx-auto"
+            />
           </div>
           <h1 className="text-5xl font-bold text-gray-900 dark:text-white mb-4">
             Charles-Alexandre Bouchard
