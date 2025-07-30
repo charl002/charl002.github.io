@@ -2,7 +2,7 @@
   "name": "charles-portfolio",
   "private": true,
   "version": "0.0.0",
-  "homepage": "https://charl002.github.io/charles-portfolio",
+  "homepage": "https://charl002.github.io",
   "type": "module",
   "scripts": {
     "dev": "vite",
