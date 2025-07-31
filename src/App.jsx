@@ -3,7 +3,8 @@ import { Button } from '@/components/ui/button.jsx'
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card.jsx'
 import { Badge } from '@/components/ui/badge.jsx'
 import { Mail, Linkedin, Github, MapPin, Calendar, ExternalLink, Code, Database, Globe, Users, MessageSquare, Target } from 'lucide-react'
-import { AnimatePresence } from 'framer-motion'
+import { motion, AnimatePresence } from 'framer-motion'
+import profilePicture from './assets/profilepicture.jpg'
 import './App.css'
 
 function App() {
@@ -93,13 +94,7 @@ function App() {
       {/* Hero Section */}
       <section className="py-20 px-4">
         <div className="container mx-auto text-center">
-          <div className="w-32 h-32 mx-auto mb-8">
-            <img
-              src="src/profilepicture.jpg"
-              alt="Profile picture of Charles-Alexandre Bouchard"
-              className="w-32 h-32 rounded-full object-cover border-4 border-blue-500 shadow-lg mx-auto"
-            />
-          </div>
+          <img src={profilePicture} alt="Charles-Alexandre Bouchard Profile" className="w-32 h-32 mx-auto mb-8 rounded-full object-cover border-4 border-blue-500 shadow-lg" />
           <h1 className="text-5xl font-bold text-gray-900 dark:text-white mb-4">
             Charles-Alexandre Bouchard
           </h1>
